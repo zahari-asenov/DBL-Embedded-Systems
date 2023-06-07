@@ -2,7 +2,6 @@ from AMSpi import AMSpi
 import time
 
 
-
 if __name__ == '__main__':
 	with AMSpi() as amspi:
 
@@ -16,11 +15,11 @@ if __name__ == '__main__':
 
 		amspi.set_L293D_pins(5, 6, 13, 19)
 
-		amspi.run_dc_motors(push_motor)
+		amspi.run_dc_motors([push_motor,push_motor, conveyer_belt, bucket])
 		time.sleep(5)
-		amspi.stop_dc_motors(push_motor)
+		amspi.stop_dc_motors([push_motor])
 		time.sleep(5)
-		amspi.run_dc_motors(conveyer_belt)
+		amspi.run_dc_motors([conveyer_belt])
 		time.sleep(5)
 		amspi.stop_dc_motors(conveyer_belt)
 		time.sleep(5)
