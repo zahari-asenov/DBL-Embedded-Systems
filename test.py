@@ -20,3 +20,6 @@ if __name__ == '__main__':
 		print("Stop")
 		amspi.stop_dc_motors([amspi.DC_Motor_1])
 		time.sleep(2)
+		print("GO: counterclockwise")
+		amspi.run_dc_motors([amspi.DC_Motor_1], clockwise=False)
+		time.sleep(2)
