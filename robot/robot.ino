@@ -12,44 +12,37 @@ void setup() {
 }
 
 void loop() {
-      String data = ReadData();
-      bool track_clear = false;
-      bool color_recieved = false;
-      
-      if (data == "motion")
+      if(Serial.available() > 0)
       {
-        delay(6500);
-        fetch_disk();
-        Serial.println("Fetched");
-        run_belt();
-        Serial.println("Conveyer belt running");
+        char data = Serial.read();
+        bool track_clear = false;
+        bool color_recieved = false;
         
-      }
-   }
-
-void fetch_disk()
-{
-  fetching_motor.setSpeed(speed(100)); 
-  fetching_motor.run(FORWARD);
-  delay(1000);
-  fetching_motor.run(RELEASE);
+        if (data == 'M')
+        {
+          // start fetching
+            delay(6500);
+            fetching_motor.setSpeed(speed(100)); 
+            fetching_motor.run(FORWARD);
+            delay(1000);
+            fetching_motor.run(RELEASE);
+            
+          //start conveyer belt
+            delay(2000);  
+            belt_motor.setSpeed(speed(50));
+            belt_motor.run(BACKWARD);
+            delay(3000);
+            belt_motor.run(RELEASE);
+            delay(7000);
+            belt_motor.setSpeed(speed(100));
+            belt_motor.run(BACKWARD);
+            delay(5000);
+            belt_motor.run(RELEASE);
+        }
+     }
 }
 
-void run_belt()
-{
-  belt_motor.setSpeed(speed(100));
-  belt_motor.run(BACKWARD);
-  delay(10000);
-  belt_motor.run(RELEASE);
-}
 
-String ReadData() {
-  String data = Serial.readStringUntil('\n');
-  while (Serial.available() > 0) {
-    Serial.read(); // Clear remaining characters in the serial buffer
-  }
-  return data;
-}
 
 int  speed(int percent)
 {
