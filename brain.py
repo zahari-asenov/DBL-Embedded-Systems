@@ -1,9 +1,9 @@
 import serial
 import time
 from distance_ready import get_motion
-from color import detect_color
+from color import get_color
 
-ser = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
+ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
 ser.reset_input_buffer()
 
 while True:
@@ -16,7 +16,7 @@ while True:
 	ser.write(b"M")
 	#wait until disk is under light sensor
 	time.sleep(12.5)
-	color = detect_color()
+	color = get_color()
 	ser.write(color.encode())
 	#wait for instructions from the arduino
 	while received_data == False:
