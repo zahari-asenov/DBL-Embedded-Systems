@@ -8,7 +8,7 @@ ser.reset_input_buffer()
 
 while True:
 	motion = False
-	color = ""
+	color_detected = ""
 	received_data = False
 	while motion == False:
 		motion = distance.get_motion()
@@ -16,8 +16,8 @@ while True:
 	ser.write(b"M")
 	#wait until disk is under light sensor
 	time.sleep(12.5)
-	color = color.get_color()
-	ser.write(color.encode())
+	color_detected = color.get_color()
+	ser.write(color_detected.encode())
 	#wait for instructions from the arduino
 	while received_data == False:
 		if ser.in_waiting > 0:

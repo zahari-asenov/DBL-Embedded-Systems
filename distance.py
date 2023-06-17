@@ -52,7 +52,6 @@ def get_motion():
                 else:
                     print ("Measured Distance = %.1f cm" % dist)
                     return(False)
-                time.sleep(1)
 
             # Reset by pressing CTRL + C
         except KeyboardInterrupt:

@@ -22,7 +22,7 @@ def setup():
 
 def get_color():
     colors = []
-
+    setup()
     for _ in range(NUM_MEASUREMENTS):
         GPIO.output(s2, GPIO.LOW)
         GPIO.output(s3, GPIO.LOW)
