@@ -1,20 +1,19 @@
+
 import RPi.GPIO as GPIO
 import time
 
 
 def distance():
-
     #GPIO Mode (BOARD / BCM)
     GPIO.setmode(GPIO.BCM)
-
+ 
     #set GPIO Pins
     GPIO_TRIGGER = 17
     GPIO_ECHO = 27
-
+ 
     #set GPIO direction (IN / OUT)
     GPIO.setup(GPIO_TRIGGER, GPIO.OUT)
-    GPIO.setup(GPIO_ECHO, GPIO.IN)
-    # set Trigger to HIGH
+    GPIO.setup(GPIO_ECHO, GPIO.IN)    # set Trigger to HIGH
     GPIO.output(GPIO_TRIGGER, True)
 
     # set Trigger after 0.01ms to LOW
@@ -23,11 +22,9 @@ def distance():
 
     StartTime = time.time()
     StopTime = time.time()
-
     # save StartTime
     while GPIO.input(GPIO_ECHO) == 0:
         StartTime = time.time()
-
     # save time of arrival
     while GPIO.input(GPIO_ECHO) == 1:
         StopTime = time.time()
@@ -41,7 +38,6 @@ def distance():
     return distance
 
 def get_motion():
-
     dist = distance()
 
     # check if distance is within the desired range

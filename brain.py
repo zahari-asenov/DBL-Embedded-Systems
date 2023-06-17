@@ -15,12 +15,15 @@ try:
 		received_data = False
 		while motion == False:
 			motion = distance.get_motion()
+			time.sleep(1)
 		#when motion is detected
+		print("first")
 		ser.write(b"M")
+		print("second")
 		#wait until disk is under light sensor
 		time.sleep(12.5)
-		color_detected = color.get_color()
-		ser.write(color_detected.encode())
+		#color_detected = color.get_color()
+		#ser.write(color_detected.encode())
 		#wait for instructions from the arduino
 		while received_data == False:
 			if ser.in_waiting > 0:
@@ -31,8 +34,9 @@ try:
 		if data == "check if track is clear":
 			while motion == True:
 				motion = distance.get_motion()
+				time.sleep(1)
 			#Tell the arduino that track is clear ->  Go extend fetching mechanism
 			ser.write(b"G")
-
+			time.sleep(1)
 except KeyboardInterrupt:
             print("Measurement stopped by User")
