@@ -3,14 +3,11 @@ import time
 from collections import Counter
 
 
-
-
 s2 = 23
 s3 = 24
 signal = 25
 NUM_CYCLES = 10
 NUM_MEASUREMENTS = 6
-
 
 def setup():
     GPIO.setmode(GPIO.BCM)
@@ -19,10 +16,9 @@ def setup():
     GPIO.setup(s3, GPIO.OUT)
     print("\n")
 
-
 def get_color():
-    colors = []
     setup()
+    colors = []
     for _ in range(NUM_MEASUREMENTS):
         GPIO.output(s2, GPIO.LOW)
         GPIO.output(s3, GPIO.LOW)
@@ -64,20 +60,5 @@ def get_color():
     # Finding the most common color among measurements
     counter = Counter(colors)
     most_common_color = counter.most_common(1)[0][0]
-    return most_common_color
-
-
-def endprogram():
     GPIO.cleanup()
-
-
-if __name__ == '__main__':
-
-    setup()
-
-    try:
-        most_common_color = detect_color()
-        print(f"The most common color detected is: {most_common_color}")
-
-    except KeyboardInterrupt:
-        endprogram()
+    return most_common_color

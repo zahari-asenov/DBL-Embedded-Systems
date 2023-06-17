@@ -41,19 +41,16 @@ def distance():
     return distance
 
 def get_motion():
-    if __name__ == '__main__':
-        try:
-            while True:
-                dist = distance()
-                # check if distance is within the desired range
-                if 2.5 <= dist <= 3.5:
-                    print("Distance is within the desired range!")
-                    return(True)
-                else:
-                    print ("Measured Distance = %.1f cm" % dist)
-                    return(False)
 
-            # Reset by pressing CTRL + C
-        except KeyboardInterrupt:
-            print("Measurement stopped by User")
-            GPIO.cleanup()
+    dist = distance()
+    # check if distance is within the desired range
+    if 2.5 <= dist <= 3.5:
+        print("Distance is within the desired range!")
+        GPIO.cleanup()
+        return(True)
+    else:
+        print ("Measured Distance = %.1f cm" % dist)
+        GPIO.cleanup()
+        return(False)
+
+
