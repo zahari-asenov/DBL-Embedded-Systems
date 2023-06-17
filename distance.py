@@ -2,18 +2,18 @@ import RPi.GPIO as GPIO
 import time
 
 
-#GPIO Mode (BOARD / BCM)
-GPIO.setmode(GPIO.BCM)
-
-#set GPIO Pins
-GPIO_TRIGGER = 17
-GPIO_ECHO = 27
-
-#set GPIO direction (IN / OUT)
-GPIO.setup(GPIO_TRIGGER, GPIO.OUT)
-GPIO.setup(GPIO_ECHO, GPIO.IN)
-
 def distance():
+
+    #GPIO Mode (BOARD / BCM)
+    GPIO.setmode(GPIO.BCM)
+
+    #set GPIO Pins
+    GPIO_TRIGGER = 17
+    GPIO_ECHO = 27
+
+    #set GPIO direction (IN / OUT)
+    GPIO.setup(GPIO_TRIGGER, GPIO.OUT)
+    GPIO.setup(GPIO_ECHO, GPIO.IN)
     # set Trigger to HIGH
     GPIO.output(GPIO_TRIGGER, True)
 
