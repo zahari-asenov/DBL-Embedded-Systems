@@ -37,20 +37,19 @@ def distance():
     # multiply with the sonic speed (34300 cm/s)
     # and divide by 2, because there and back
     distance = (TimeElapsed * 34300) / 2
-
+    GPIO.cleanup()
     return distance
 
 def get_motion():
 
     dist = distance()
+
     # check if distance is within the desired range
     if 2.5 <= dist <= 3.5:
         print("Distance is within the desired range!")
-        GPIO.cleanup()
         return(True)
     else:
         print ("Measured Distance = %.1f cm" % dist)
-        GPIO.cleanup()
         return(False)
 
 
