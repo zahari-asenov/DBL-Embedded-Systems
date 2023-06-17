@@ -1,7 +1,7 @@
 import serial
 import time
 from distance_ready import motion
-from colorsensor import get_color
+from color import get_color
 
 ser = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
 ser.reset_input_buffer()
