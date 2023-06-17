@@ -14,8 +14,10 @@ void setup() {
 void loop() {
       if(Serial.available() > 0)
       {
+        motor4.setSpeed(speed(100));
+        motor4.run(FORWARD);
         char data = Serial.read();
-        bool track_clear = false;
+        bool motion = true;
         bool color_recieved = false;
         
         if (data == 'M')
@@ -34,10 +36,39 @@ void loop() {
             delay(3000);
             belt_motor.run(RELEASE);
             delay(7000);
+          //get data about color and send info to bucket sorting mechanism
+            delay(1000);
+            color = Serial.read();
+            if (color = 'B')
+            {//rotate bucket motor
+            } else if (color = 'W')
+            {
+              
+            } else {
+              //halt
+            }
+          //continue belt
             belt_motor.setSpeed(speed(100));
             belt_motor.run(BACKWARD);
             delay(5000);
             belt_motor.run(RELEASE);
+        //rotate bucket
+        /////
+            //after fetching is done send info to pi
+            Serial.println("check if track is clear");
+            while (motion == true)
+            {
+              String ready = Serial.read();
+              if (ready == 'G')
+              {
+                motion == false;
+              }
+            }
+            //reset fetching mechanism
+            fetching_motor.setSpeed(speed(100)); 
+            fetching_motor.run(BACKWARD);
+            delay(1000);
+            fetching_motor.run(RELEASE);
         }
      }
 }
