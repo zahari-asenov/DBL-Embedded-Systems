@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 
-def motion():
+def get_motion():
     #GPIO Mode (BOARD / BCM)
     GPIO.setmode(GPIO.BCM)
 
