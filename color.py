@@ -49,14 +49,14 @@ def detect_color():
         green = NUM_CYCLES / duration
 
         if 14000 <= red <= 18000 and 14000 <= blue <= 17500 and 12000 <= green <= 15000:
-            colors.append("Black Disk")
+            colors.append("B")
         elif 12000 <= red <= 35000 and 16000 <= blue <= 35000 and 15001 <= green <= 35000:
-            colors.append("White Disk")
+            colors.append("W")
         elif 13000 <= red <= 20000 and 10000 <= blue <= 15500 and 9000 <= green <= 12000:
-            colors.append("No Disk")
+            colors.append("N")
         else:
-            colors.append("Unrecognized")
-        time.sleep(0.5)
+            colors.append("U")
+        time.sleep(1)
 
     # Finding the most common color among measurements
     counter = Counter(colors)
