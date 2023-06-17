@@ -4,9 +4,10 @@
 
 AF_DCMotor fetching_motor(1);
 AF_DCMotor belt_motor(2);
-AF_DCMotor bucket_motor(3);
-AF_DCMotor motor4(4);
+AF_DCMotor bucket_motor(4);
 
+
+char last_disk = 'B';
 void setup() {
     Serial.begin(9600);
 }
@@ -14,11 +15,8 @@ void setup() {
 void loop() {
       if(Serial.available() > 0)
       {
-        motor4.setSpeed(speed(100));
-        motor4.run(FORWARD);
         char data = Serial.read();
         bool motion = true;
-        bool color_recieved = false;
         
         if (data == 'M')
         {
@@ -38,12 +36,20 @@ void loop() {
             delay(7000);
           //get data about color and send info to bucket sorting mechanism
             delay(1000);
-            color = Serial.read();
+            char color = Serial.read();
+          //rotate bucket motor
             if (color = 'B')
-            {//rotate bucket motor
-            } else if (color = 'W')
             {
-              
+              if (last_disk == 'W') {
+                rotate_bucket();
+              }
+              last_disk = 'B';
+            } 
+            else if (color = 'W') {
+              if (last_disk == 'B') {
+                rotate_bucket();
+              }
+              last_disk = 'W';
             } else {
               //halt
             }
@@ -52,13 +58,12 @@ void loop() {
             belt_motor.run(BACKWARD);
             delay(5000);
             belt_motor.run(RELEASE);
-        //rotate bucket
-        /////
-            //after fetching is done send info to pi
+            
+          //after fetching is done send info to pi
             Serial.println("check if track is clear");
             while (motion == true)
             {
-              String ready = Serial.read();
+              char ready = Serial.read();
               if (ready == 'G')
               {
                 motion == false;
@@ -73,8 +78,13 @@ void loop() {
      }
 }
 
-
-
+void rotate_bucket()
+{
+  bucket_motor.setSpeed(speed(100));
+  bucket_motor.run(FORWARD);
+  delay(2650);
+  bucket_motor.run(RELEASE);
+}
 int  speed(int percent)
 {
   return map(percent, 0, 100, 0, 255);
