@@ -88,11 +88,12 @@ void loop() {
 
 void rotate_bucket()
 {
-  bucket_motor.setSpeed(speed(100));
+  bucket_motor.setSpeed(speed(50));
   bucket_motor.run(FORWARD);
   delay(2650);
   bucket_motor.run(RELEASE);
 }
+
 int  speed(int percent)
 {
   return map(percent, 0, 100, 0, 255);
