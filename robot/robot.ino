@@ -32,7 +32,7 @@ void loop() {
             delay(2000);  
             belt_motor.setSpeed(speed(50));
             belt_motor.run(BACKWARD);
-            delay(3000);
+            delay(2200);
             belt_motor.run(RELEASE);
             delay(7000);
           //get data about color and send info to bucket sorting mechanism
@@ -43,14 +43,14 @@ void loop() {
               {
                 char color = Serial.read();
                 //rotate bucket motor
-                if (color = 'B')
+                if (color == 'B')
                 {
                   if (last_disk == 'W') {
                     rotate_bucket();
                   }
                   last_disk = 'B';
                 } 
-                else if (color = 'W') {
+                else if (color == 'W') {
                   if (last_disk == 'B') {
                     rotate_bucket();
                   }
@@ -78,7 +78,7 @@ void loop() {
               }
             }
             //reset fetching mechanism
-            fetching_motor.setSpeed(speed(50)); 
+            fetching_motor.setSpeed(speed(100)); 
             fetching_motor.run(BACKWARD);
             delay(1000);
             fetching_motor.run(RELEASE);

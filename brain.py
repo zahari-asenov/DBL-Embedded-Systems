@@ -21,6 +21,7 @@ try:
 		#wait until disk is under light sensor
 		time.sleep(12.5)
 		color_detected = color.get_color()
+		print(color_detected);
 		ser.write(color_detected.encode())
 		#wait for instructions from the arduino
 		while received_data == False:
