@@ -17,9 +17,7 @@ try:
 			motion = distance.get_motion()
 			time.sleep(1)
 		#when motion is detected
-		print("first")
 		ser.write(b"M")
-		print("second")
 		#wait until disk is under light sensor
 		time.sleep(12.5)
 		#color_detected = color.get_color()
@@ -35,8 +33,10 @@ try:
 			while motion == True:
 				motion = distance.get_motion()
 				time.sleep(1)
-			#Tell the arduino that track is clear ->  Go extend fetching mechanism
+			#Tell the arduino that track is clear ->  Go extend fetching mechanism]
+			print("Extend the mechanism")
 			ser.write(b"G")
+			print("Just sent the signal")
 			time.sleep(1)
 except KeyboardInterrupt:
             print("Measurement stopped by User")

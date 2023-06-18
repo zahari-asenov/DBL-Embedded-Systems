@@ -36,23 +36,24 @@ void loop() {
             delay(7000);
           //get data about color and send info to bucket sorting mechanism
             delay(1000);
-            char color = Serial.read();
+           // char color = Serial.read();
           //rotate bucket motor
             if (color = 'B')
-            {
-              if (last_disk == 'W') {
-                rotate_bucket();
-              }
-              last_disk = 'B';
-            } 
-            else if (color = 'W') {
-              if (last_disk == 'B') {
-                rotate_bucket();
-              }
-              last_disk = 'W';
-            } else {
-              //halt
-            }
+//            {
+//              if (last_disk == 'W') {
+//                rotate_bucket();
+//              }
+//              last_disk = 'B';
+//            } 
+//            else if (color = 'W') {
+//              if (last_disk == 'B') {
+//                rotate_bucket();
+//              }
+//              last_disk = 'W';
+//            } else {
+//              //halt
+//            }
+            rotate_bucket();
           //continue belt
             belt_motor.setSpeed(speed(100));
             belt_motor.run(BACKWARD);
@@ -63,10 +64,12 @@ void loop() {
             Serial.println("check if track is clear");
             while (motion == true)
             {
-              char ready = Serial.read();
-              if (ready == 'G')
-              {
-                motion == false;
+              if (Serial.available > 0 ) {
+                char ready = Serial.read();
+                if (ready == 'G')
+                {
+                  motion == false;
+                }
               }
             }
             //reset fetching mechanism
