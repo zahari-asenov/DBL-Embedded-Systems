@@ -80,7 +80,7 @@ void loop() {
             }
             
             //reset fetching mechanism
-            fetching_motor.setSpeed(speed(100)); 
+            fetching_motor.setSpeed(speed(50)); 
             fetching_motor.run(BACKWARD);
             delay(1000);
             fetching_motor.run(RELEASE);
@@ -90,7 +90,7 @@ void loop() {
 
 void rotate_bucket()
 {
-  bucket_motor.setSpeed(speed(50));
+  bucket_motor.setSpeed(speed(80));
   bucket_motor.run(FORWARD);
   delay(2750);
   bucket_motor.run(RELEASE);
