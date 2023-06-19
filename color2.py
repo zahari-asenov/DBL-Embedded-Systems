@@ -51,10 +51,12 @@ def get_color():
         green = NUM_CYCLES / duration
         print("green value - ",green)
 
-        if 13000 <= red <= 19000 and 10000 <= blue <= 17500 and 9000 <= green <= 14000:
+        if 13000 <= red <= 16500 and 13501 <= blue <= 15500 and 12001 <= green <= 14500:
             colors.append("B")
         elif 20000 <= red <= 35000 and 20000 <= blue <= 35000 and 15000 <= green <= 35000:
             colors.append("W")
+        elif 13000 <= red <= 16500 and 12000 <= blue <= 13500 and 9000 <= green <= 12000:
+            colors.append("N")
         else:
             colors.append("U")
         time.sleep(1)
