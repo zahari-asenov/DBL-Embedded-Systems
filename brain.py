@@ -36,7 +36,8 @@ try:
 			print("PI: Disk is not Black or White")
 
 		ser.write(color_detected.encode())
-
+		if color_detected == 'U':
+			raise(Exception())
 		#wait for instructions from the arduino to check for motion again
 		while received_data == False:
 			if ser.in_waiting > 0:
@@ -57,3 +58,5 @@ try:
 
 except KeyboardInterrupt:
             print("PI: Measurement stopped by User")
+except Exception:
+			print("PI: A Disk that is neither black or white was fetched: restart execution of the code")
