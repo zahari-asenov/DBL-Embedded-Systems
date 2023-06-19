@@ -29,6 +29,7 @@ def get_color():
             GPIO.wait_for_edge(signal, GPIO.FALLING)
         duration = time.time() - start
         red = NUM_CYCLES / duration
+        print("red value - ",red)
 
         GPIO.output(s2, GPIO.LOW)
         GPIO.output(s3, GPIO.HIGH)
@@ -38,6 +39,7 @@ def get_color():
             GPIO.wait_for_edge(signal, GPIO.FALLING)
         duration = time.time() - start
         blue = NUM_CYCLES / duration
+        print("blue value - ",blue)
 
         GPIO.output(s2, GPIO.HIGH)
         GPIO.output(s3, GPIO.HIGH)
@@ -47,11 +49,14 @@ def get_color():
             GPIO.wait_for_edge(signal, GPIO.FALLING)
         duration = time.time() - start
         green = NUM_CYCLES / duration
+        print("green value - ",green)
 
-        if 13000 <= red <= 18000 and 10000 <= blue <= 17500 and 9000 <= green <= 12500:
+        if 18000 <= red <= 19500 and 13900 <= blue <= 15500 and 13000 <= green <= 15000:
             colors.append("B")
-        elif 12000 <= red <= 35000 and 16000 <= blue <= 35000 and 15000 <= green <= 35000:
+        elif 20000 <= red <= 35000 and 20000 <= blue <= 35000 and 15000 <= green <= 35000:
             colors.append("W")
+        elif 15500 <= red <= 17999 and 12500 <= blue <= 13899 and 10500 <= green <= 12500:
+            colors.append("N")
         else:
             colors.append("U")
         time.sleep(1)
