@@ -35,14 +35,14 @@ void loop() {
             delay(2200);
             belt_motor.run(RELEASE);
             delay(7000);
-          //get data about color and send info to bucket sorting mechanism
-            delay(1000);
+         //Tell pi to detect and send the color detected
+            Serial.println("Detect color");
+         //get data about color and send info to bucket sorting mechanism
             while (color_received == false)
             {
               if (Serial.available() > 0)
               {
                 char color = Serial.read();
-                //rotate bucket motor
                 if (color == 'B')
                 {
                   if (last_disk == 'W') {
@@ -61,6 +61,7 @@ void loop() {
                 color_received = true;
               }
             }
+            
           //continue belt
             belt_motor.setSpeed(speed(100));
             belt_motor.run(BACKWARD);
@@ -68,7 +69,7 @@ void loop() {
             belt_motor.run(RELEASE);
             
           //after fetching is done send info to pi
-            Serial.println("check if track is clear");
+            Serial.println("Check if track is clear");
             while (motion == true)
             {
               char ready = Serial.read();
@@ -77,6 +78,7 @@ void loop() {
                 motion = false;
               }
             }
+            
             //reset fetching mechanism
             fetching_motor.setSpeed(speed(100)); 
             fetching_motor.run(BACKWARD);
@@ -90,7 +92,8 @@ void rotate_bucket()
 {
   bucket_motor.setSpeed(speed(50));
   bucket_motor.run(FORWARD);
-  delay(2650);
+  //delay(2650)
+  delay(2300);
   bucket_motor.run(RELEASE);
 }
 
