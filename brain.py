@@ -5,12 +5,6 @@ import time
 import distance
 import color
 
-class OtherColorDetected(Exception):
-    pass
-
-class NoDisk(Exception):
-    pass
-
 #start serial connection
 ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
 ser.reset_input_buffer()
@@ -22,6 +16,7 @@ try:
 		color_detected = ""
 		received_data = False
 		#Check for incoming disks
+		time.sleep(1)
 		while motion == False:
 			motion = distance.get_motion()
 			time.sleep(1)
@@ -39,9 +34,7 @@ try:
 		elif color_detected == 'W':
 			print("PI: White disk")
 		elif color_detected == 'U':
-			raise(OtherColorDetected())
-		elif color_detected == 'N':
-			raise(NoDisk())
+			raise(Exception())
 
 		ser.write(color_detected.encode())
 		#wait for instructions from the arduino to check for motion again
@@ -56,7 +49,6 @@ try:
 			while motion == True:
 				motion = distance.get_motion()
 				time.sleep(1)
-
 		#Tell the arduino that track is clear ->  Go extend fetching mechanism]
 			print("PI: Extend the mechanism")
 			ser.write(b"G")
@@ -64,7 +56,5 @@ try:
 
 except KeyboardInterrupt:
             print("PI: Measurement stopped by User")
-except OtherColorDetected:
+except Exception:
 			print("PI: A Disk that is neither black or white was fetched: restart execution of the code and remove disk")
-except NoDisk:
-			print("PI: No disk was detected")
