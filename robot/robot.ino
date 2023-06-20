@@ -90,7 +90,7 @@ void rotate_bucket()
 {
   bucket_motor.setSpeed(speed(80));
   bucket_motor.run(FORWARD);
-  delay(2200);
+  delay(2650);
   bucket_motor.run(RELEASE);
 }
 
@@ -98,13 +98,3 @@ int  speed(int percent)
 {
   return map(percent, 0, 100, 0, 255);
 }
-
-//void halt()
-//{
-//  while (true)
-//  {
-//    fetching_motor.run(RELEASE);
-//    belt_motor.run(RELEASE);
-//    belt_motor.run(RELEASE);
-//  }
-//}

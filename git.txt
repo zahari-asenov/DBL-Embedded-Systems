@@ -1,0 +1,392 @@
+commit a42969de12d8be24930cdb56d6ab7239f85d94ef
+Author: David <david.04.fsl@gmail.com>
+Date:   Mon Jun 19 20:56:40 2023 +0200
+
+    .
+
+commit 7073babc988e057fae881aa2adca6b067666562c
+Merge: 42be534 7944226
+Author: David <david.04.fsl@gmail.com>
+Date:   Mon Jun 19 20:47:37 2023 +0200
+
+    .Merge branch 'main' of github.com:zahari-asenov/DBL-Embedded-Systems
+
+commit 42be534fd0c1fda3191d711c9e6e58474f84a366
+Author: David <david.04.fsl@gmail.com>
+Date:   Mon Jun 19 20:46:47 2023 +0200
+
+    .
+
+commit 7944226ee1371534e94f97ae36f4e94fe8a3dd83
+Author: sotirisxar <135531361+sotirisxar@users.noreply.github.com>
+Date:   Mon Jun 19 20:24:35 2023 +0200
+
+    Add files via upload
+
+commit 96fc28c69d78481ae9db28c0faaa25cce7612e20
+Author: sotirisxar <135531361+sotirisxar@users.noreply.github.com>
+Date:   Mon Jun 19 18:21:38 2023 +0200
+
+    Add files via upload
+
+commit 2e564e67b30459258fe4de6f17022ec290579295
+Author: David <david.04.fsl@gmail.com>
+Date:   Mon Jun 19 17:31:18 2023 +0200
+
+    .
+
+commit d2aa5e2ab1966ace60d0f4025355db7dfbcb12b3
+Merge: 4dcf585 3a3cc7f
+Author: David <david.04.fsl@gmail.com>
+Date:   Mon Jun 19 17:21:25 2023 +0200
+
+    aMerge remote-tracking branch 'refs/remotes/origin/main'
+
+commit 4dcf5859404ac03e702a6a69deffb6f2ea53f587
+Author: David <david.04.fsl@gmail.com>
+Date:   Mon Jun 19 17:19:30 2023 +0200
+
+    .
+
+commit 3a3cc7fd3094b5f6f6e6e3b010ca9b64ffd6b048
+Author: sotirisxar <135531361+sotirisxar@users.noreply.github.com>
+Date:   Mon Jun 19 16:23:29 2023 +0200
+
+    Add files via upload
+
+commit 968b5959705f6a20035bed67370e9b9a0910cbad
+Author: David Lima <106471907+limadavid04@users.noreply.github.com>
+Date:   Mon Jun 19 16:15:02 2023 +0200
+
+    Delete gitlogs.txt
+
+commit f02bbfdf9d52647aabc6a1e9efc09055585b5d4e
+Merge: cb0ccf2 0aa42ec
+Author: David <david.04.fsl@gmail.com>
+Date:   Mon Jun 19 16:08:16 2023 +0200
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+commit cb0ccf29cfe315e348fa9e14e2b61903a76c156f
+Author: David <david.04.fsl@gmail.com>
+Date:   Mon Jun 19 16:06:10 2023 +0200
+
+    .
+
+commit 0aa42ec023eae98639029b94df0692d5c2c89398
+Author: sotirisxar <135531361+sotirisxar@users.noreply.github.com>
+Date:   Mon Jun 19 16:04:14 2023 +0200
+
+    Add files via upload
+
+commit 5bf967940bded417e5ab354709f419d25c77cc37
+Author: sotirisxar <135531361+sotirisxar@users.noreply.github.com>
+Date:   Mon Jun 19 15:47:32 2023 +0200
+
+    Add files via upload
+
+commit 49c5db167560e231731c920d52095eebd3f17f99
+Author: sotirisxar <135531361+sotirisxar@users.noreply.github.com>
+Date:   Mon Jun 19 15:15:10 2023 +0200
+
+    Add files via upload
+
+commit 8cc2a85cbe2ace4ab4577c6407814290a3abdc00
+Author: sotirisxar <135531361+sotirisxar@users.noreply.github.com>
+Date:   Sun Jun 18 18:08:31 2023 +0200
+
+    Add files via upload
+
+commit 5874f2f7025424b439c561901fde943e9eeba859
+Author: David <david.04.fsl@gmail.com>
+Date:   Sun Jun 18 18:06:42 2023 +0200
+
+    .
+
+commit e78e460ebb56392b94487944d1b51e31c60eafb6
+Author: sotirisxar <135531361+sotirisxar@users.noreply.github.com>
+Date:   Sun Jun 18 17:22:37 2023 +0200
+
+    Add files via upload
+
+commit 04efaff806a65104a4ed03fd92faa4c6f4d8a79d
+Author: David <david.04.fsl@gmail.com>
+Date:   Sun Jun 18 17:18:17 2023 +0200
+
+    .
+
+commit 9fe51cd3dd4fda513b7e78391f8319b8df136347
+Author: David <david.04.fsl@gmail.com>
+Date:   Sun Jun 18 17:15:29 2023 +0200
+
+    .
+
+commit d2f58ceb44c5421b33a9e9c2c9bd70cb8206f069
+Author: KokoMilev <97620943+KokoMilev@users.noreply.github.com>
+Date:   Sun Jun 18 16:28:19 2023 +0200
+
+    Add files via upload
+
+commit 2b09a6f85cb86de95061428b7a1fc03be542668b
+Author: David <david.04.fsl@gmail.com>
+Date:   Sun Jun 18 15:26:47 2023 +0200
+
+    .
+
+commit 12775bb1ac15534fe152d7f0975225804a639d0c
+Author: David <david.04.fsl@gmail.com>
+Date:   Sat Jun 17 20:39:22 2023 +0200
+
+    .
+
+commit 2a4996dd113aee863eb1c4545a1b7dad0d7489ac
+Merge: feff73b 0a50444
+Author: David <david.04.fsl@gmail.com>
+Date:   Sat Jun 17 20:35:34 2023 +0200
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+commit feff73bd212686f3d0860292238c6ef76106a118
+Author: David <david.04.fsl@gmail.com>
+Date:   Sat Jun 17 20:34:59 2023 +0200
+
+    .
+
+commit 0a50444438d835ec85b8f9401bad7b21a09c4962
+Author: KokoMilev <97620943+KokoMilev@users.noreply.github.com>
+Date:   Sat Jun 17 20:32:06 2023 +0200
+
+    Add files via upload
+
+commit c3306b9c337e2cede914916c7b2a09f7246d6eab
+Author: KokoMilev <97620943+KokoMilev@users.noreply.github.com>
+Date:   Sat Jun 17 20:30:08 2023 +0200
+
+    Add files via upload
+
+commit f48aff8dcceeaf46984a93a539018f3f51cf062f
+Author: David <david.04.fsl@gmail.com>
+Date:   Sat Jun 17 18:35:36 2023 +0200
+
+    .
+
+commit 04e90fe48dd64b7885f11755d14e95215a0ab8c7
+Author: David <david.04.fsl@gmail.com>
+Date:   Sat Jun 17 18:26:44 2023 +0200
+
+    .
+
+commit 122e2793494640a55d7efcbc86f89616a2618830
+Author: David <david.04.fsl@gmail.com>
+Date:   Sat Jun 17 18:21:41 2023 +0200
+
+    .
+
+commit 2dcf28811c9ff98b8888781f94d25fd3f8826fa0
+Author: David <david.04.fsl@gmail.com>
+Date:   Sat Jun 17 17:58:25 2023 +0200
+
+    .
+
+commit 7f554ba65d033fe5657e2c74f1bced9491e90469
+Author: David <david.04.fsl@gmail.com>
+Date:   Sat Jun 17 17:53:22 2023 +0200
+
+    .
+
+commit 61d7cf567b900ff190aae4e23c7cca89715ef661
+Author: David <david.04.fsl@gmail.com>
+Date:   Sat Jun 17 17:46:11 2023 +0200
+
+    .
+
+commit 39e9d8dd3ac093972b374e54a015c40b45e34dfc
+Author: David <david.04.fsl@gmail.com>
+Date:   Sat Jun 17 17:40:13 2023 +0200
+
+    .
+
+commit 6f4a8900ad5dc9fad4b83f064ba1783a483117e0
+Author: David <david.04.fsl@gmail.com>
+Date:   Sat Jun 17 17:28:52 2023 +0200
+
+    .
+
+commit 4599d61ffc0560ea31c7996bf6ebefdbcc580333
+Author: David <david.04.fsl@gmail.com>
+Date:   Sat Jun 17 17:27:56 2023 +0200
+
+    .
+
+commit f0f292b9eb50c0f964a42b018477e28d52a7a6ad
+Author: sotirisxar <135531361+sotirisxar@users.noreply.github.com>
+Date:   Sat Jun 17 17:06:52 2023 +0200
+
+    Add files via upload
+
+commit b011393f60f749295a181c5be7f852f5f887081e
+Author: David <david.04.fsl@gmail.com>
+Date:   Sat Jun 17 17:01:36 2023 +0200
+
+    .
+
+commit dd1f3d87fba0124973548c02b3ca1329e85c6b1a
+Author: David <david.04.fsl@gmail.com>
+Date:   Sat Jun 17 15:28:32 2023 +0200
+
+    .
+
+commit e632a78db82fd64cbd0916daa0dd89de8cac5ade
+Author: David Lima <106471907+limadavid04@users.noreply.github.com>
+Date:   Fri Jun 16 15:01:08 2023 +0200
+
+    Delete colorsensor.py
+
+commit 6de06ba4da98ebd13470d09180ac326b47c3870e
+Author: David Lima <106471907+limadavid04@users.noreply.github.com>
+Date:   Fri Jun 16 14:59:15 2023 +0200
+
+    Delete AMSpi.py
+
+commit ae3e2e9aec76573e94214ffad4d8a5ea2da675ea
+Author: David Lima <106471907+limadavid04@users.noreply.github.com>
+Date:   Fri Jun 16 14:58:55 2023 +0200
+
+    Delete test.py
+
+commit c4827a667528af761df053bdfbe2ab94efae7a67
+Author: David Lima <106471907+limadavid04@users.noreply.github.com>
+Date:   Fri Jun 16 14:58:29 2023 +0200
+
+    Delete dc.py
+
+commit 81b737d4c63735c3fa81ad78dbfe0bd70b7d2257
+Author: David Lima <106471907+limadavid04@users.noreply.github.com>
+Date:   Fri Jun 16 14:58:15 2023 +0200
+
+    Delete fetch.py
+
+commit 22a2369473ce60be1e4af6e452aa60396b3ba4a9
+Author: David Lima <106471907+limadavid04@users.noreply.github.com>
+Date:   Fri Jun 16 14:57:59 2023 +0200
+
+    Delete dc_example1.py
+
+commit 1fd1de502760d6d59b05a4eab98122696e79c54f
+Author: David Lima <106471907+limadavid04@users.noreply.github.com>
+Date:   Fri Jun 16 14:57:47 2023 +0200
+
+    Delete dc_example.py
+
+commit 3a5d24d5ec5d2ebd64047509d13f2c4e5b49834e
+Author: ivakk <62553530+ivakk@users.noreply.github.com>
+Date:   Fri Jun 16 11:45:45 2023 +0200
+
+    Add files via upload
+
+commit 0e920d18e67b948aa6793d8856c0e6f798846fc4
+Author: ivakk <62553530+ivakk@users.noreply.github.com>
+Date:   Fri Jun 16 11:41:30 2023 +0200
+
+    Delete colorsensor.py
+
+commit e4b1d666d062cc605aeaff3573b2deffa899057b
+Author: ivakk <62553530+ivakk@users.noreply.github.com>
+Date:   Fri Jun 16 11:41:07 2023 +0200
+
+    Create colorsensor.py
+
+commit a9d2634077e17663b18682db43ac1addf265e387
+Author: ivakk <62553530+ivakk@users.noreply.github.com>
+Date:   Fri Jun 16 11:39:40 2023 +0200
+
+    Rename kur.py to colorsensor.py
+
+commit cd96247dcadec4886effc09e245dc27ef5694f44
+Author: ivakk <62553530+ivakk@users.noreply.github.com>
+Date:   Fri Jun 16 11:38:19 2023 +0200
+
+    Color Sensor
+    
+    This is the file with the function for the TCS230 color sensor
+
+commit 7d303259fc875dbc9190581882d159e778df7eae
+Author: David <david.04.fsl@gmail.com>
+Date:   Thu Jun 15 18:32:27 2023 +0200
+
+    m
+
+commit 58dd17c55df63c6a519624367034236a88bdf2a6
+Author: David <david.04.fsl@gmail.com>
+Date:   Wed Jun 14 18:31:37 2023 +0200
+
+    .
+
+commit 578c800b9231e651ba4a62940fc54b71af49a1fa
+Author: KokoMilev <97620943+KokoMilev@users.noreply.github.com>
+Date:   Tue Jun 13 13:59:16 2023 +0200
+
+    Add files via upload
+
+commit 531caab97f803227ff71d756ca4485b6df20cfc5
+Author: David <david.04.fsl@gmail.com>
+Date:   Fri Jun 9 14:44:44 2023 +0200
+
+    a
+
+commit deeee7deeed2110957cbd02beb2eb2bcbdfb5cb5
+Author: David <david.04.fsl@gmail.com>
+Date:   Wed Jun 7 11:50:44 2023 +0200
+
+    ,
+
+commit 372c038055b59c1a995db6cfdc3abdf4dbb3df45
+Merge: ec2b24a 0c63f74
+Author: David <david.04.fsl@gmail.com>
+Date:   Wed Jun 7 11:46:10 2023 +0200
+
+    Merge remote-tracking branch 'refs/remotes/origin/main'
+
+commit ec2b24aefa4ef500321f2b4029099abdc5b300c8
+Author: David <david.04.fsl@gmail.com>
+Date:   Wed Jun 7 11:44:29 2023 +0200
+
+    .
+
+commit 0c63f746bf83213cd9b0fb064ff0ea475d2a46d2
+Author: zahari-asenov <135330869+zahari-asenov@users.noreply.github.com>
+Date:   Wed Jun 7 11:39:40 2023 +0200
+
+    f
+    
+    gth
+
+commit ef4ed20b76ab6c3c295d2e25a5fe1821fd0631e6
+Author: David <david.04.fsl@gmail.com>
+Date:   Wed Jun 7 11:36:19 2023 +0200
+
+    a
+
+commit c7daf4f5b51da18c418c0905ca45d82c5f24890d
+Author: David <david.04.fsl@gmail.com>
+Date:   Wed Jun 7 11:31:49 2023 +0200
+
+    a
+
+commit 41f5ce91e2963f4ece99997947b6ac60df9c556b
+Author: David <david.04.fsl@gmail.com>
+Date:   Wed Jun 7 11:24:18 2023 +0200
+
+     .
+
+commit 022279ec0d0bcae19f3975d1b5a71f781383ab5d
+Author: David <david.04.fsl@gmail.com>
+Date:   Tue Jun 6 16:05:16 2023 +0200
+
+    .
+
+commit 9c2386a2187968beb4851131de41557ea9e33d5f
+Author: sotirisxar <135531361+sotirisxar@users.noreply.github.com>
+Date:   Sun Jun 4 17:53:35 2023 +0200
+
+    Add files via upload
