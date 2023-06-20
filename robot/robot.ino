@@ -18,7 +18,8 @@ void loop() {
         char data = Serial.read();
         bool motion = true;
         bool color_received = false;
-        
+
+        //when motion is detected by pi
         if (data == 'M')
         {
           // start fetching
@@ -90,7 +91,7 @@ void rotate_bucket()
 {
   bucket_motor.setSpeed(speed(80));
   bucket_motor.run(FORWARD);
-  delay(2650);
+  delay(2400);
   bucket_motor.run(RELEASE);
 }
 
